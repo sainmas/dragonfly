@@ -10,7 +10,7 @@
 <div class="container">
     <h2 class="pt-3">Order a pizza</h2>
 
-    <form method="post" action="https://dragonfly/greenriverdev.com/vardump.php">
+    <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php">
         <div class="mb-3">
             <label for="inputName" class="form-label">Name:</label>
             <input type="text" class="form-control" id="inputName" name="Name">
@@ -28,7 +28,7 @@
             <input type="text" class="form-control" id="inputAddress" name="Address">
         </div>
         <div class="form-check form-check-inline mb-3">
-            <label class="form-label">Pizza Size:</label>
+            <label class="form-label">Pizza Size:</label><br>
             <input type="radio" class="" id="small" name="size">
             <label for="small" class=>Small</label>
             <input type="radio" class="" id="medium" name="size">
@@ -36,33 +36,40 @@
             <input type="radio" class="" id="large" name="size">
             <label for="large" class="">Large</label>
         </div>
-        <div class="mb-3">
-            <p>Toppings:</p>
+        <div class="form-check mb-3">
+            <label class="form-label">Toppings:</label><br>
 
             <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
             <label for="pepperoni">Pepperoni</label><br>
+
             <input type="checkbox" id="peppers" name="toppings" value="Peppers">
             <label for="peppers">Peppers</label><br>
+
             <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
             <label for="mushrooms">Mushrooms</label><br>
+
             <input type="checkbox" id="Pineapple" name="toppings" value="Pineapple">
             <label for="Pineapple">Pineapple</label><br>
+
             <input type="checkbox" id="bacon" name="toppings" value="Bacon">
             <label for="bacon">Bacon</label><br>
+
             <input type="checkbox" id="sausage" name="toppings" value="Sausage">
             <label for="sausage">Sausage</label><br>
+
             <input type="checkbox" id="olives" name="toppings" value="Olives">
             <label for="olives">Olives</label><br>
+
             <input type="checkbox" id="jalapenos" name="toppings" value="Jalapenos">
             <label for="jalapenos">Jalapenos</label><br>
         </div>
 
         <div class="form-check form-check-inline mb-3">
-            <label class="form-label">Delivery Option:</label>
+            <label class="form-label">Delivery Option:</label><br>
             <input type="radio" class="" id="Delivery" name="delivery">
-            <label for="Delivery" class=>Delivery</label>
+            <label for="Delivery" class="">Delivery</label>
             <input type="radio" class="" id="takeout" name="delivery">
-            <label for="Takeout" class=>Takeout</label>
+            <label for="takeout" class="">Takeout</label>
         </div>
         
         <div class="mb-3">

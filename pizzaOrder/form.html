@@ -10,7 +10,7 @@
 <div class="container">
     <h2 class="pt-3">Order a pizza</h2>
 
-    <form method="post" action="https://dragonfly/greenriverdev.com/vardump.php">
+    <form method="post" action="https://dragonfly/greenriverdev.com/vardump.php" onsubmit="return validateForm()">
         <div class="mb-3">
             <label for="inputName" class="form-label">Name:</label>
             <input type="text" class="form-control" id="inputName" name="Name">
@@ -61,7 +61,7 @@
             <label class="form-label">Delivery Option:</label>
             <input type="radio" class="" id="Delivery" name="delivery">
             <label for="Delivery" class=>Delivery</label>
-            <input type="radio" class="" id="takeout" name="delivery">
+            <input type="radio" class="" id="Takeout" name="delivery">
             <label for="Takeout" class=>Takeout</label>
         </div>
         

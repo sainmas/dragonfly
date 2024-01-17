@@ -4,7 +4,7 @@ body{
 
 body.dark-mode{
     color: #d3d3d3;
-    background-color: #222021;
+    background-color: #111;
 
     .nav-link {
         color: #bbb;
@@ -12,6 +12,10 @@ body.dark-mode{
 
     .navbar-brand{
         color: #d3d3d3
+    }
+
+    .navbar{
+        background-color: #222021;
     }
 }
 

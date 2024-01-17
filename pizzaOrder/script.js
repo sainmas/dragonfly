@@ -9,6 +9,7 @@ function validateForm() {
 
     //alert("hello");
     validateEmail();
+    validatePhone();
     validateCity();
     validateToppings();
 
@@ -74,7 +75,19 @@ function validateCity(){
 //phone/email validator
 
 function validatePhone() {
+    const phoneRe =  /^[0-9]{3}-?[0-9]{3}-?[0-9]{4}$/
 
+    let phone = document.querySelector("input[name='Telephone']").value;
+    console.log(phone);
+
+    if (String(phone)
+        .match(phoneRe)) {
+        console.log("matched");
+        return true;
+    }
+
+    alert("Must use a phone number.");
+    return false;
 }
 
 

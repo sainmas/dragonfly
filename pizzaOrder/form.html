@@ -10,7 +10,7 @@
 <div class="container">
     <h2 class="pt-3">Order a pizza</h2>
 
-    <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php">
+    <form method="post" action="https://dragonfly/greenriverdev.com/vardump.php" onsubmit="return validateForm()">
         <div class="mb-3">
             <label for="inputName" class="form-label">Name:</label>
             <input type="text" class="form-control" id="inputName" name="Name">
@@ -81,5 +81,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
+<script src="script.js"></script>
+
 </body>
 </html>

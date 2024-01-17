@@ -1,0 +1,24 @@
+body{
+    background-color: white;
+}
+
+body.dark-mode{
+    color: #d3d3d3;
+    background-color: #111;
+
+    .nav-link {
+        color: #bbb;
+    }
+
+    .navbar-brand{
+        color: #d3d3d3
+    }
+
+    .navbar{
+        background-color: #222021;
+    }
+}
+
+#bio-container p {
+    text-align: justify;
+}

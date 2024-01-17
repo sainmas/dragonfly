@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82d6b42d-6e29-49ad-b99a-caa48e32b30f" name="Changes" comment="Added application form.html, all buttons work">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzaOrder/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzaOrder/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Fixed checkboxes" />
+    <list id="e13cc91c-4a7b-467c-ab92-78eb5cdc34c2" name="Changes by gwyll" comment="" />
+    <list id="27a361a9-401e-4ad6-8271-5d3788f2d951" name="Changes by Mason" comment="Changes by Mason" />
+    <list id="6830600f-b4dc-4aeb-ae82-b5c88dd1c423" name="Changes by mattw" comment="Completed basic form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,33 +23,55 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cervantes-yadira&quot;
+  }
 }</component>
-  <component name="ProjectId" id="2apLY731SST5N7RtICHZlFmFOo8" />
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a74ef543-1b7c-40b5-b3c9-4bae70040e57" />
+        <option name="url" value="https://github.com/cervantes-yadira/dragonfly.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ak9sG3grq4UjLwQtuJvmFsFIkG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.applicationform.html.executor": "Run",
-    "JavaScript Debug.form.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.form.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yc916/PhpstormProjects/dragonfly&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yc916\PhpstormProjects\dragonfly\img" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,42 +82,118 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82d6b42d-6e29-49ad-b99a-caa48e32b30f" name="Changes" comment="" />
-      <created>1705010619027</created>
+      <changelist id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="" />
+      <created>1704851914907</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1705010619027</updated>
-      <workItem from="1705010620086" duration="478000" />
-      <workItem from="1705011128322" duration="2999000" />
-      <workItem from="1705433732808" duration="4924000" />
-      <workItem from="1705441304456" duration="4027000" />
-      <workItem from="1705459498008" duration="362000" />
-      <workItem from="1705459877641" duration="615000" />
+      <updated>1704851914907</updated>
+      <workItem from="1704851915984" duration="1122000" />
+      <workItem from="1704947179516" duration="549000" />
+      <workItem from="1704992495927" duration="27000" />
+      <workItem from="1704996511728" duration="798000" />
+      <workItem from="1705009288596" duration="4496000" />
+      <workItem from="1705096213781" duration="174000" />
+      <workItem from="1705472048798" duration="1459000" />
+      <workItem from="1705530448229" duration="535000" />
     </task>
-    <task id="LOCAL-00001" summary="Added application form.html, all buttons work">
+    <task id="LOCAL-00001" summary="Restructured project files">
       <option name="closed" value="true" />
-      <created>1705441514642</created>
+      <created>1704852011572</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1705441514642</updated>
+      <updated>1704852011572</updated>
     </task>
-    <task id="LOCAL-00002" summary="Added application form.html, all buttons work">
+    <task id="LOCAL-00002" summary="Added Matt's picture">
       <option name="closed" value="true" />
-      <created>1705459897913</created>
+      <created>1704853152730</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1705459897913</updated>
+      <updated>1704853152730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Altered image sizing on Jenniferpic1.jpg">
+      <option name="closed" value="true" />
+      <created>1704947501662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704947501662</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added sprint 1 files">
+      <option name="closed" value="true" />
+      <created>1704996703751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704996703751</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added pizza order form">
+      <option name="closed" value="true" />
+      <created>1705009830654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705009830654</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed name of pizza form webpage">
+      <option name="closed" value="true" />
+      <created>1705010039063</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705010039063</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added basic form">
+      <option name="closed" value="true" />
+      <created>1705011365487</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705011365487</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Completed basic form">
+      <option name="closed" value="true" />
+      <created>1705012677880</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705012677880</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Edited vardump link">
+      <option name="closed" value="true" />
+      <created>1705013559019</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705013559019</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed checkboxes">
+      <option name="closed" value="true" />
+      <created>1705013755909</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705013755909</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added application form.html, all buttons work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added application form.html, all buttons work" />
+    <MESSAGE value="Restructured project files" />
+    <MESSAGE value="Added Matt's picture" />
+    <MESSAGE value="Altered image sizing on Jenniferpic1.jpg" />
+    <MESSAGE value="Added sprint 1 files" />
+    <MESSAGE value="Added pizza order form" />
+    <MESSAGE value="Changed name of pizza form webpage" />
+    <MESSAGE value="Added basic form" />
+    <MESSAGE value="Completed basic form" />
+    <MESSAGE value="Edited vardump link" />
+    <MESSAGE value="Changes by Mason" />
+    <MESSAGE value="Fixed checkboxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed checkboxes" />
   </component>
 </project>

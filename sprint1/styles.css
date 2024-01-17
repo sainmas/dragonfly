@@ -22,3 +22,14 @@ body.dark-mode{
 #bio-container p {
     text-align: justify;
 }
+
+/**
+sign up form
+ */
+#email-message {
+    visibility: hidden;
+}
+
+#cohort-num-message {
+    visibility: hidden;
+}

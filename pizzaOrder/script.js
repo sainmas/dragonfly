@@ -9,6 +9,7 @@ function validateForm() {
 
     //alert("hello");
     validateEmail();
+    validateToppings();
 
     if (noErrors === true) {
         document.forms.submit();
@@ -19,13 +20,13 @@ function validateForm() {
 function validateEmail() {
     // FIX
     const re = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/
-    
+
     let email = document.querySelector("input[name='Email']").value;
     console.log(email);
 
-    if(email.includes("@greenriver.edu") && String(email)
+    if (email.includes("@greenriver.edu") && String(email)
         .toLowerCase()
-        .match(re)){
+        .match(re)) {
         return true;
     }
 
@@ -34,15 +35,28 @@ function validateEmail() {
 }
 
 //topping validator
-function validateToppings(){
-
+function validateToppings() {
+    var inputs = document.getElementsByTagName('input');
+    count = 0;
+    for(var i = 0; i<inputs.length; i++) {
+        if(inputs[i].type === "checkbox" && inputs[i].checked === true) {
+            count++;
+        }
+    }
+    if (count > 3) {
+        alert("too many toppings!");
+        event.preventDefault();
+    } else if (count < 3) {
+        alert("too little toppings!")
+        event.preventDefault();
+    }
 }
 
 //city/state validator
 
 //phone/email validator
 
-function validatePhone(){
+function validatePhone() {
 
 }
 

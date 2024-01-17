@@ -10,7 +10,7 @@
 <div class="container">
     <h2 class="pt-3">Order a pizza</h2>
 
-    <form method="post" action="https://dragonfly/greenriverdev.com/vardump.php" onsubmit="return validateForm()">
+    <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" onsubmit="return validateForm()">
         <div class="mb-3">
             <label for="inputName" class="form-label">Name:</label>
             <input type="text" class="form-control" id="inputName" name="Name">
@@ -29,11 +29,11 @@
         </div>
         <div class="form-check form-check-inline mb-3">
             <label class="form-label">Pizza Size:</label><br>
-            <input type="radio" class="" id="small" name="size">
+            <input type="radio" class="" id="small" name="size" value="small">
             <label for="small" class=>Small</label>
-            <input type="radio" class="" id="medium" name="size">
+            <input type="radio" class="" id="medium" name="size" value="medium">
             <label for="medium" class=>Medium</label>
-            <input type="radio" class="" id="large" name="size">
+            <input type="radio" class="" id="large" name="size" value="large">
             <label for="large" class="">Large</label>
         </div>
         <div class="form-check mb-3">
@@ -66,15 +66,15 @@
 
         <div class="form-check form-check-inline mb-3">
             <label class="form-label">Delivery Option:</label><br>
-            <input type="radio" class="" id="Delivery" name="delivery">
+            <input type="radio" class="" id="Delivery" name="delivery" value="Delivery">
             <label for="Delivery" class="">Delivery</label>
-            <input type="radio" class="" id="takeout" name="delivery">
+            <input type="radio" class="" id="takeout" name="delivery" value="Takeout">
             <label for="takeout" class="">Takeout</label>
         </div>
         
         <div class="mb-3">
             <label for="inputNotes" class="form-label">Notes:</label>
-            <input type="text" class="form-control" id="inputNotes">
+            <input type="text" class="form-control" id="inputNotes" name="Notes">
         </div>
 
 

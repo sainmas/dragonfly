@@ -1,0 +1,116 @@
+Index: pizzaOrder/form.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\">\r\n</head>\r\n<body>\r\n\r\n<div class=\"container\">\r\n    <h2 class=\"pt-3\">Order a pizza</h2>\r\n\r\n    <form method=\"post\" action=\"https://dragonfly.greenriverdev.com/vardump.php\">\r\n        <div class=\"mb-3\">\r\n            <label for=\"inputName\" class=\"form-label\">Name:</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"inputName\" name=\"Name\">\r\n        </div>\r\n        <div class=\"mb-3\">\r\n            <label for=\"inputPhone\" class=\"form-label\">Phone:</label>\r\n            <input type=\"tel\" class=\"form-control\" id=\"inputPhone\" name=\"Telephone\">\r\n        </div>\r\n        <div class=\"mb-3\">\r\n            <label for=\"inputEmail\" class=\"form-label\">Email:</label>\r\n            <input type=\"email\" class=\"form-control\" id=\"inputEmail\" name=\"Email\">\r\n        </div>\r\n        <div class=\"mb-3\">\r\n            <label for=\"inputAddress\" class=\"form-label\">Address</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"inputAddress\" name=\"Address\">\r\n        </div>\r\n        <div class=\"form-check form-check-inline mb-3\">\r\n            <label class=\"form-label\">Pizza Size:</label><br>\r\n            <input type=\"radio\" class=\"\" id=\"small\" name=\"size\">\r\n            <label for=\"small\" class=>Small</label>\r\n            <input type=\"radio\" class=\"\" id=\"medium\" name=\"size\">\r\n            <label for=\"medium\" class=>Medium</label>\r\n            <input type=\"radio\" class=\"\" id=\"large\" name=\"size\">\r\n            <label for=\"large\" class=\"\">Large</label>\r\n        </div>\r\n        <div class=\"form-check mb-3\">\r\n            <label class=\"form-label\">Toppings:</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"pepperoni\" name=\"topping1\" value=\"Pepperoni\">\r\n            <label for=\"pepperoni\">Pepperoni</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"peppers\" name=\"topping2\" value=\"Peppers\">\r\n            <label for=\"peppers\">Peppers</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"mushrooms\" name=\"topping3\" value=\"Mushrooms\">\r\n            <label for=\"mushrooms\">Mushrooms</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"Pineapple\" name=\"topping4\" value=\"Pineapple\">\r\n            <label for=\"Pineapple\">Pineapple</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"bacon\" name=\"topping5\" value=\"Bacon\">\r\n            <label for=\"bacon\">Bacon</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"sausage\" name=\"topping6\" value=\"Sausage\">\r\n            <label for=\"sausage\">Sausage</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"olives\" name=\"topping7\" value=\"Olives\">\r\n            <label for=\"olives\">Olives</label><br>\r\n\r\n            <input type=\"checkbox\" id=\"jalapenos\" name=\"topping8\" value=\"Jalapenos\">\r\n            <label for=\"jalapenos\">Jalapenos</label><br>\r\n        </div>\r\n\r\n        <div class=\"form-check form-check-inline mb-3\">\r\n            <label class=\"form-label\">Delivery Option:</label><br>\r\n            <input type=\"radio\" class=\"\" id=\"Delivery\" name=\"delivery\">\r\n            <label for=\"Delivery\" class=\"\">Delivery</label>\r\n            <input type=\"radio\" class=\"\" id=\"takeout\" name=\"delivery\">\r\n            <label for=\"takeout\" class=\"\">Takeout</label>\r\n        </div>\r\n        \r\n        <div class=\"mb-3\">\r\n            <label for=\"inputNotes\" class=\"form-label\">Notes:</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"inputNotes\">\r\n        </div>\r\n\r\n\r\n        <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n    </form>\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pizzaOrder/form.html b/pizzaOrder/form.html
+--- a/pizzaOrder/form.html	(revision bcfc332f5d0a8b20df241472b1ab2f59558dbf77)
++++ b/pizzaOrder/form.html	(date 1705445404923)
+@@ -2,7 +2,7 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <title>Title</title>
++    <title>Dragonfly Pizza</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ </head>
+ <body>
+@@ -10,7 +10,7 @@
+ <div class="container">
+     <h2 class="pt-3">Order a pizza</h2>
+ 
+-    <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php">
++    <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" onsubmit="checkboxes()">
+         <div class="mb-3">
+             <label for="inputName" class="form-label">Name:</label>
+             <input type="text" class="form-control" id="inputName" name="Name">
+@@ -29,11 +29,11 @@
+         </div>
+         <div class="form-check form-check-inline mb-3">
+             <label class="form-label">Pizza Size:</label><br>
+-            <input type="radio" class="" id="small" name="size">
+-            <label for="small" class=>Small</label>
+-            <input type="radio" class="" id="medium" name="size">
+-            <label for="medium" class=>Medium</label>
+-            <input type="radio" class="" id="large" name="size">
++            <input type="radio" class="" id="small" name="size" value="small">
++            <label for="small" class="">Small</label>
++            <input type="radio" class="" id="medium" name="size" value="medium">
++            <label for="medium" class="">Medium</label>
++            <input type="radio" class="" id="large" name="size" value="large">
+             <label for="large" class="">Large</label>
+         </div>
+         <div class="form-check mb-3">
+@@ -66,20 +66,39 @@
+ 
+         <div class="form-check form-check-inline mb-3">
+             <label class="form-label">Delivery Option:</label><br>
+-            <input type="radio" class="" id="Delivery" name="delivery">
++            <input type="radio" class="" id="Delivery" name="delivery" value="Delivery">
+             <label for="Delivery" class="">Delivery</label>
+-            <input type="radio" class="" id="takeout" name="delivery">
+-            <label for="takeout" class="">Takeout</label>
++            <input type="radio" class="" id="Takeout" name="delivery" value="Takeout">
++            <label for="Takeout" class="">Takeout</label>
+         </div>
+-        
++
+         <div class="mb-3">
+             <label for="inputNotes" class="form-label">Notes:</label>
+-            <input type="text" class="form-control" id="inputNotes">
++            <input type="text" class="form-control" id="inputNotes" name="Notes">
+         </div>
+ 
+ 
+         <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
++
++    <script>
++        function checkboxes() {
++            var inputs = document.getElementsByTagName('input');
++            count = 0;
++            for(var i = 0; i<inputs.length; i++) {
++                if(inputs[i].type === "checkbox" && inputs[i].checked === true) {
++                    count++;
++                }
++            }
++            if (count > 3) {
++                alert("too many toppings!");
++                event.preventDefault();
++            } else if (count < 3) {
++                alert("too little toppings!")
++                event.preventDefault();
++            }
++        }
++    </script>
+ </div>
+ </body>
+ </html>
+\ No newline at end of file
+Index: sprint1/applicationform.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Application Form</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\">\r\n</head>\r\n<body>\r\n    <div class = \"container\">\r\n        <h2>Application Form</h2>\r\n        <form method=\"post\" action=\"https://dragonfly.greenriverdev.com/vardump.php\">\r\n            <div class=\"mb-3\">\r\n                <label for=\"job-name\" class=\"form-label\">Job Name*</label>\r\n                <input type=\"text\" class=\"form-control\" id=\"job-name\" name=\"job-name\">\r\n            </div>\r\n            <div class=\"mb-3\">\r\n                <label for=\"job-url\" class=\"form-label\">Job Description URL*</label>\r\n                <input type=\"text\" class=\"form-control\" id=\"job-url\" name=\"job-url\">\r\n            </div>\r\n            <div class=\"mb-3\">\r\n                <label for=\"today\" class=\"form-label\">Date of Application*</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"today\" name=\"app-date\">\r\n            </div>\r\n            <div class=\"mb-3\">\r\n                <label class = \"mb-3\">Application Status*</label><br>\r\n                <div class=\"form-check\">\r\n                    <input class=\"form-check-input\" type=\"radio\" name=\"applicationstatus\" id=\"needtoapply\">\r\n                    <label class=\"form-check-label\" for=\"needtoapply\">Need to Apply</label>\r\n                </div>\r\n                <div class=\"form-check\">\r\n                    <input class=\"form-check-input\" type=\"radio\" name=\"applicationstatus\" id=\"applied\">\r\n                    <label class=\"form-check-label\" for=\"applied\">Applied</label>\r\n                </div>\r\n                <div class=\"form-check\">\r\n                    <input class=\"form-check-input\" type=\"radio\" name=\"applicationstatus\" id=\"interviewing\">\r\n                    <label class=\"form-check-label\" for=\"interviewing\">Interviewing</label>\r\n                </div>\r\n                <div class=\"form-check\">\r\n                    <input class=\"form-check-input\" type=\"radio\" name=\"applicationstatus\" id=\"rejected\">\r\n                    <label class=\"form-check-label\" for=\"rejected\">Rejected</label>\r\n                </div>\r\n                <div class=\"form-check\">\r\n                    <input class=\"form-check-input\" type=\"radio\" name=\"applicationstatus\" id=\"accepted\">\r\n                    <label class=\"form-check-label\" for=\"accepted\">Accepted</label>\r\n                </div>\r\n                <div class=\"form-check\">\r\n                    <input class=\"form-check-input\" type=\"radio\" name=\"applicationstatus\" id=\"inactive\">\r\n                    <label class=\"form-check-label\" for=\"inactive\">Inactive/Expired</label>\r\n                </div>\r\n            </div>\r\n            <div class=\"mb-3\">\r\n                <label for=\"followupdates\" class=\"form-label\">Updates</label>\r\n                <textarea class=\"form-control\" id=\"followupdates\" name=\"followupdates\"\r\n                    placeholder=\"Who have you spoken with interviewed? Contact Info?\" rows=\"3\"></textarea>\r\n            </div>\r\n\r\n            <div class=\"mb-3\">\r\n                <label for=\"twoweek\" class=\"form-label\">Follow up date*</label>\r\n                <input type=\"date\" class=\"form-control\" id=\"twoweek\" name=\"followup-date\">\r\n            </div>\r\n\r\n            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n\r\n            need to do:\r\n            Date of Application* (use JS to default to today)\r\n            Follow up date*: (use JS to default to 2 weeks from today)\r\n            make the * a required one\r\n\r\n        </form>\r\n    </div>\r\n</body>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sprint1/applicationform.html b/sprint1/applicationform.html
+--- a/sprint1/applicationform.html	(revision bcfc332f5d0a8b20df241472b1ab2f59558dbf77)
++++ b/sprint1/applicationform.html	(date 1705441629955)
+@@ -65,7 +65,13 @@
+             Date of Application* (use JS to default to today)
+             Follow up date*: (use JS to default to 2 weeks from today)
+             make the * a required one
++            <script>
++                let today = new Date().toISOString().substring(0, 10);
++                document.querySelector("#today").value = today;
+ 
++                addMlSeconds = 14 * 24 * 60 * 60 * 1000;
++                document.querySelector("#twoweek").valueAsDate = new Date(today + addMlSeconds);
++            </script>
+         </form>
+     </div>
+ </body>
+\ No newline at end of file

@@ -9,6 +9,7 @@ function validateForm() {
 
     //alert("hello");
     validateEmail();
+    validateCity();
     validateToppings();
 
     if (noErrors === true) {
@@ -53,6 +54,22 @@ function validateToppings() {
 }
 
 //city/state validator
+function validateCity(){
+    let city = document.getElementById('inputCity');
+    let cityLower = city.value.toLowerCase();
+
+    switch (cityLower){
+        case ('seattle'):
+        case ('kent'):
+        case ('auburn'):
+        case ('burien'):
+        case ('seatac'):
+            return true;
+        default:
+            alert("A $25 delivery fee will be added to you order total!")
+            return false;
+    }
+}
 
 //phone/email validator
 

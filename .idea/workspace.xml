@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Replaced invalid email alerts">
-      <change beforePath="$PROJECT_DIR$/pizzaOrder/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/script.js" afterDir="false" />
+    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Changed event listener type for email">
+      <change beforePath="$PROJECT_DIR$/pizzaOrder/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/form.html" afterDir="false" />
     </list>
     <list id="e13cc91c-4a7b-467c-ab92-78eb5cdc34c2" name="Changes by gwyll" comment="" />
     <list id="27a361a9-401e-4ad6-8271-5d3788f2d951" name="Changes by Mason" comment="Changes by Mason" />
@@ -216,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705615510388</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changed event listener type for email">
+      <option name="closed" value="true" />
+      <created>1705615738523</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705615738523</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +256,7 @@
     <MESSAGE value="Added functional signup form" />
     <MESSAGE value="Fixed signup form's missing validation, added working contact form" />
     <MESSAGE value="Replaced invalid email alerts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced invalid email alerts" />
+    <MESSAGE value="Changed event listener type for email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed event listener type for email" />
   </component>
 </project>

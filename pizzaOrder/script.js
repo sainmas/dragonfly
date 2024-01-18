@@ -12,19 +12,21 @@ function validateEmail() {
     if(email.value.includes("@greenriver.edu") && email.value.match(re)) {
         return true;
     }
+    alert("Invalid Email: email must end in @greenriver.edu");
+
     return false;
 }
 
-email.addEventListener("focusout", (Event) => {
-    let message = document.getElementById("email-message");
-    let showMessage = validateEmail();
-
-    if (!showMessage) {
-        message.style.visibility = "visible";
-    } else {
-        message.style.visibility = "hidden";
-    }
-});
+// email.addEventListener("focusout", (Event) => {
+//     let message = document.getElementById("email-message");
+//     let showMessage = validateEmail();
+//
+//     if (!showMessage) {
+//         message.style.visibility = "visible";
+//     } else {
+//         message.style.visibility = "hidden";
+//     }
+// });
 
 
 //topping validator
@@ -70,7 +72,7 @@ function validateCity(){
 //phone/email validator
 
 function validatePhone() {
-    const phoneRe =  /^[0-9]{3}-?[0-9]{3}-?[0-9]{4}$/
+    const phoneRe =  /^1?[0-9]{3}-?[0-9]{3}-?[0-9]{4}$/
 
     let phone = document.querySelector("input[name='Telephone']").value;
     console.log(phone);

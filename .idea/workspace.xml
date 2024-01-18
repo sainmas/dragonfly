@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Fixed signup form's missing validation, added working contact form">
-      <change afterPath="$PROJECT_DIR$/pizzaOrder/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzaOrder/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/form.html" afterDir="false" />
+    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Replaced invalid email alerts">
       <change beforePath="$PROJECT_DIR$/pizzaOrder/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/script.js" afterDir="false" />
     </list>
     <list id="e13cc91c-4a7b-467c-ab92-78eb5cdc34c2" name="Changes by gwyll" comment="" />
@@ -211,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705539728895</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Replaced invalid email alerts">
+      <option name="closed" value="true" />
+      <created>1705615510388</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705615510388</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +247,7 @@
     <MESSAGE value="Fixed checkboxes" />
     <MESSAGE value="Added functional signup form" />
     <MESSAGE value="Fixed signup form's missing validation, added working contact form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed signup form's missing validation, added working contact form" />
+    <MESSAGE value="Replaced invalid email alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced invalid email alerts" />
   </component>
 </project>

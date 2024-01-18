@@ -15,7 +15,7 @@ function validateEmail() {
     return false;
 }
 
-email.addEventListener("input", (Event) => {
+email.addEventListener("focusout", (Event) => {
     let message = document.getElementById("email-message");
     let showMessage = validateEmail();
 

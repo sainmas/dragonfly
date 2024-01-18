@@ -6,7 +6,7 @@ body.dark-mode{
     color: #d3d3d3;
     background-color: #111;
 
-    .nav-link {
+    .nav-link, .btn, .a {
         color: #bbb;
     }
 
@@ -21,6 +21,10 @@ body.dark-mode{
     .btn{
         color: #bbb;
     }
+}
+
+body h5{
+    color: #006225;
 }
 
 #bio-container p {
@@ -44,4 +48,53 @@ sign up form
 
 #contact-message-invalid {
     visibility: hidden;
+}
+
+.app-list{
+    gap: 10px;
+    padding: 15px;
+}
+
+.app-list-item{
+    margin: 6px 0;
+    align-items: center;
+}
+
+.app-list-item .btn{
+    width: 100%;
+}
+
+.app-list-item .btn-update:hover{
+    background-color: #6CB443;
+}
+
+.app-list-item .btn-delete:hover{
+    background-color: red;
+}
+
+.dashboard-top{
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.reminders{
+    padding: 15px;
+}
+
+.welcome-info{
+    margin-top: 20px;
+}
+
+.reminder-div{
+    padding: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.reminder-div .btn{
+    width: 100%;
+}
+
+.btn-reminder-more{
+    color: black;
 }

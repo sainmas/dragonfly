@@ -6,7 +6,7 @@ body.dark-mode{
     color: #d3d3d3;
     background-color: #111;
 
-    .nav-link, .btn, .a {
+    .nav-link, .btn, a {
         color: #bbb;
     }
 
@@ -20,6 +20,10 @@ body.dark-mode{
 
     .btn{
         color: #bbb;
+    }
+
+    .dashboard-top>div{
+        border: 3px solid #bbb;
     }
 }
 
@@ -106,6 +110,7 @@ sign up form
 .dashboard-top{
     gap: 10px;
     margin-bottom: 20px;
+
 }
 
 .reminders{
@@ -128,4 +133,12 @@ sign up form
 
 .btn-reminder-more{
     color: black;
+}
+
+a {
+    color: purple;
+}
+
+.dashboard-top>div{
+    border: 3px solid black;
 }

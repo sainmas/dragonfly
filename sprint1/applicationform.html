@@ -7,65 +7,61 @@
 </head>
 <body>
     <div class = "container">
-        <h2>Application Form</h2>
+        <h2 class="pt-3">Application Form</h2>
         <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php">
             <div class="mb-3">
                 <label for="job-name" class="form-label">Job Name*</label>
-                <input type="text" class="form-control" id="job-name" name="job-name">
+                <input type="text" class="form-control" id="job-name" name="job-name" required>
             </div>
             <div class="mb-3">
                 <label for="job-url" class="form-label">Job Description URL*</label>
-                <input type="text" class="form-control" id="job-url" name="job-url">
+                <input type="text" class="form-control" id="job-url" name="job-url" required>
             </div>
             <div class="mb-3">
                 <label for="today" class="form-label">Date of Application*</label>
-                <input type="date" class="form-control" id="today" name="app-date">
+                <input type="date" class="form-control" id="today" name="app-date" required>
             </div>
             <div class="mb-3">
                 <label class = "mb-3">Application Status*</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="applicationstatus" id="needtoapply">
-                    <label class="form-check-label" for="needtoapply">Need to Apply</label>
+                    <input class="form-check-input" type="radio" name="application-status" id="need-to-apply" value="need-to-apply" required>
+                    <label class="form-check-label" for="need-to-apply">Need to Apply</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="applicationstatus" id="applied">
+                    <input class="form-check-input" type="radio" name="application-status" id="applied" value="applied">
                     <label class="form-check-label" for="applied">Applied</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="applicationstatus" id="interviewing">
+                    <input class="form-check-input" type="radio" name="application-status" id="interviewing" value="interviewing">
                     <label class="form-check-label" for="interviewing">Interviewing</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="applicationstatus" id="rejected">
+                    <input class="form-check-input" type="radio" name="application-status" id="rejected" value="rejected">
                     <label class="form-check-label" for="rejected">Rejected</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="applicationstatus" id="accepted">
+                    <input class="form-check-input" type="radio" name="application-status" id="accepted" value="accepted">
                     <label class="form-check-label" for="accepted">Accepted</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="applicationstatus" id="inactive">
+                    <input class="form-check-input" type="radio" name="application-status" id="inactive" value="inactive">
                     <label class="form-check-label" for="inactive">Inactive/Expired</label>
                 </div>
             </div>
             <div class="mb-3">
-                <label for="followupdates" class="form-label">Updates</label>
-                <textarea class="form-control" id="followupdates" name="followupdates"
+                <label for="follow-updates" class="form-label">Updates</label>
+                <textarea class="form-control" id="follow-updates" name="follow-updates"
                     placeholder="Who have you spoken with interviewed? Contact Info?" rows="3"></textarea>
             </div>
 
             <div class="mb-3">
-                <label for="twoweek" class="form-label">Follow up date*</label>
-                <input type="date" class="form-control" id="twoweek" name="followup-date">
+                <label for="two-weeks" class="form-label">Follow up date*</label>
+                <input type="date" class="form-control" id="two-weeks" name="followup-date" required>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
-
-            need to do:
-            Date of Application* (use JS to default to today)
-            Follow up date*: (use JS to default to 2 weeks from today)
-            make the * a required one
-
         </form>
     </div>
+<script src="applicationscript.js">
+</script>
 </body>

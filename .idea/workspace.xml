@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Fixed checkboxes" />
+    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Added functional signup form">
+      <change afterPath="$PROJECT_DIR$/sprint1/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprint1/contactscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_11_36_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_11_36_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_6_45_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_6_45_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/signupscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/signupscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint1/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/styles.css" afterDir="false" />
+    </list>
     <list id="e13cc91c-4a7b-467c-ab92-78eb5cdc34c2" name="Changes by gwyll" comment="" />
     <list id="27a361a9-401e-4ad6-8271-5d3788f2d951" name="Changes by Mason" comment="Changes by Mason" />
     <list id="6830600f-b4dc-4aeb-ae82-b5c88dd1c423" name="Changes by mattw" comment="Completed basic form" />
@@ -20,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,7 +68,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yc916/PhpstormProjects/dragonfly&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yc916/PhpstormProjects/dragonfly/sprint1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,6 +78,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yc916\PhpstormProjects\dragonfly\sprint1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yc916\PhpstormProjects\dragonfly\img" />
     </key>
@@ -95,6 +108,8 @@
       <workItem from="1705096213781" duration="174000" />
       <workItem from="1705472048798" duration="1459000" />
       <workItem from="1705530448229" duration="535000" />
+      <workItem from="1705530988715" duration="3469000" />
+      <workItem from="1705535155764" duration="3555000" />
     </task>
     <task id="LOCAL-00001" summary="Restructured project files">
       <option name="closed" value="true" />
@@ -176,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705013755909</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added functional signup form">
+      <option name="closed" value="true" />
+      <created>1705534422952</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705534422952</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +217,7 @@
     <MESSAGE value="Edited vardump link" />
     <MESSAGE value="Changes by Mason" />
     <MESSAGE value="Fixed checkboxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed checkboxes" />
+    <MESSAGE value="Added functional signup form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functional signup form" />
   </component>
 </project>

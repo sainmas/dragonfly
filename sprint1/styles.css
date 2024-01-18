@@ -33,3 +33,11 @@ sign up form
 #cohort-num-message {
     visibility: hidden;
 }
+
+#contact-email-invalid {
+    visibility: hidden;
+}
+
+#contact-message-invalid {
+    visibility: hidden;
+}

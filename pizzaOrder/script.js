@@ -12,19 +12,21 @@ function validateEmail() {
     if(email.value.includes("@greenriver.edu") && email.value.match(re)) {
         return true;
     }
+    alert("Invalid Email: email must end in @greenriver.edu");
+
     return false;
 }
 
-email.addEventListener("focusout", (Event) => {
-    let message = document.getElementById("email-message");
-    let showMessage = validateEmail();
-
-    if (!showMessage) {
-        message.style.visibility = "visible";
-    } else {
-        message.style.visibility = "hidden";
-    }
-});
+// email.addEventListener("focusout", (Event) => {
+//     let message = document.getElementById("email-message");
+//     let showMessage = validateEmail();
+//
+//     if (!showMessage) {
+//         message.style.visibility = "visible";
+//     } else {
+//         message.style.visibility = "hidden";
+//     }
+// });
 
 
 //topping validator

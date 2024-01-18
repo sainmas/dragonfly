@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Sprint 1</title>
 </head>
-<body>
-    <div class="container-fluid">
+<body style="margin: 5px">
+    <div class="container-fluid p-3" >
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -24,13 +24,13 @@
                                 <a class="nav-link" aria-current="page" href="#">Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Sign Up</a>
+                                <a class="nav-link" aria-current="page" href="signup.html">Sign Up</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Add New Application</a>
+                                <a class="nav-link" aria-current="page" href="applicationform.html">Add New Application</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -43,8 +43,8 @@
                 <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
             </div>
         </div>
-        <div class="row">
-            <div class="col-8">
+        <div class="row ">
+            <div class="col-8 border border-3 border-black" style="padding: 15px">
                 <div class="row">
                     <h5>Recent Applications</h5>
                 </div>
@@ -52,29 +52,80 @@
                     <li class="col-2">Date</li>
                     <li class="col-4">Title</li>
                     <li class="col-2">Status</li>
-                    <li class="btn col-2">Update</li>
-                    <li class="btn col-2">Delete</li>
+                    <li class="btn border border-3 border-success col-2">Update</li>
+                    <li class="btn border border-3 border-danger col-2">Delete</li>
                 </ul>
+                <ul class="row list-unstyled">
+                    <li class="col-2">Date</li>
+                    <li class="col-4">Title</li>
+                    <li class="col-2">Status</li>
+                    <li class="btn border border-3 border-success col-2">Update</li>
+                    <li class="btn border border-3 border-danger col-2">Delete</li>
+                </ul>
+                <ul class="row list-unstyled">
+                    <li class="col-2">Date</li>
+                    <li class="col-4">Title</li>
+                    <li class="col-2">Status</li>
+                    <li class="btn border border-3 border-success col-2">Update</li>
+                    <li class="btn border border-3 border-danger col-2">Delete</li>
+                </ul>
+                <ul class="row list-unstyled">
+                    <li class="col-2">Date</li>
+                    <li class="col-4">Title</li>
+                    <li class="col-2">Status</li>
+                    <li class="btn border border-3 border-success col-2">Update</li>
+                    <li class="btn border border-3 border-danger col-2">Delete</li>
+                </ul>
+                <ul class="row list-unstyled">
+                    <li class="col-2">Date</li>
+                    <li class="col-4">Title</li>
+                    <li class="col-2">Status</li>
+                    <li class="btn border border-3 border-success col-2" >Update</li>
+                    <li class="btn border border-3 border-danger col-2">Delete</li>
+                </ul>
+                <p class="mx-auto" style="display: block; width:100px; color: green">More</p>
 
             </div>
-            <div class="col-4">
+            <div class="col-4 border border-3 border-black" style="padding: 15px">
                 <div>
                     <h5>Reminders</h5>
-                    <div class="">
-                        <div>Follow up with XYZ <a href="#" class="btn">View</a></div>
-                        <div>3 Incomplete APPS <a href="#" class="btn">View</a></div>
-                        <div><a href="#" class="btn">Find More Opportunities</a></div>
+                    <div class="" style="">
+                        <div class="border border-3 border-black" style="padding: 5px; margin-bottom: 10px">Follow up with XYZ <a href="#" class="btn border border-3 border-success">View</a></div>
+                        <div class="border border-3 border-black" style="padding: 5px; margin-bottom: 10px">3 Incomplete APPS <a href="#" class="btn border border-3 border-success">View</a></div>
+                        <div class="border border-3 border-black" style="padding: 5px; margin-bottom: 10px"><a href="#" class="" style="text-decoration-color: black; color: black">Find More Opportunities</a></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-8">
-                <a href="#" class="btn mx-auto p-2" style="width: 200px;">Add NEW APP</a>
+                <a href="#" class="btn mx-auto p-2 border border-3 border-black" style="display: block; width: 200px;">Add NEW APP</a>
             </div>
             <div class="col-4">
-                <a href="#" class="">Update Account Setting</a>
+                <a href="#" class="" style="color:green">Update Account Setting</a>
             </div>
+        </div>
+        <div class="row">
+            <div>
+                <p>Welcome to the Green River College Software Development Application Tracking Tool (ATT). The purpose of this tool is to provide a centralized place to track your job/internship applications that can be helpful in your application journey! </p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h5>Resources:</h5>
+                <ul class="row list-unstyled">
+                    <li class="">LinkedIn</li>
+                    <li class="">Indeed</li>
+                    <li class="">Green River Tech</li>
+                    <li class="">More</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-wrap">
+            <img src="images/it-software-dev.jpg" alt="5" class="img-fluid" style="width: 500px">
+            <h5>About Our Program</h5>
+
+            <p>Prepare for an exciting career in tech with a Bachelor of Applied Science in Software Development. Affordable tuition, instructors who care, access to tech industry mentors, and project-based learning make our applied bachelor’s program a popular destination for computing majors throughout the Seattle-Tacoma region. This degree prepares graduates for high-demand jobs such as software developer, web developer, software developer in test, and quality assurance (QA) analyst. Learn more at <a href="https://www.greenriver.edu/students/academics/degrees-programs/bachelor-of-applied-science/bachelors-in-software-development/">GreenRiver.edu</a></p>
         </div>
         <script src="script.js"></script>
     </div>

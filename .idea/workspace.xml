@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Added functional signup form">
-      <change afterPath="$PROJECT_DIR$/sprint1/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprint1/contactscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_11_36_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_11_36_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_6_45_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2024_6_45_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Fixed signup form's missing validation, added working contact form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint1/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint1/signupscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/signupscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint1/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizzaOrder/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/script.js" afterDir="false" />
     </list>
     <list id="e13cc91c-4a7b-467c-ab92-78eb5cdc34c2" name="Changes by gwyll" comment="" />
     <list id="27a361a9-401e-4ad6-8271-5d3788f2d951" name="Changes by Mason" comment="Changes by Mason" />
@@ -60,10 +54,12 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.applicationform.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.form.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -109,7 +105,8 @@
       <workItem from="1705472048798" duration="1459000" />
       <workItem from="1705530448229" duration="535000" />
       <workItem from="1705530988715" duration="3469000" />
-      <workItem from="1705535155764" duration="3555000" />
+      <workItem from="1705535155764" duration="3984000" />
+      <workItem from="1705543432474" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="Restructured project files">
       <option name="closed" value="true" />
@@ -199,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705534422952</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed signup form's missing validation, added working contact form">
+      <option name="closed" value="true" />
+      <created>1705539728895</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705539728895</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +223,7 @@
     <MESSAGE value="Changes by Mason" />
     <MESSAGE value="Fixed checkboxes" />
     <MESSAGE value="Added functional signup form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functional signup form" />
+    <MESSAGE value="Fixed signup form's missing validation, added working contact form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed signup form's missing validation, added working contact form" />
   </component>
 </project>

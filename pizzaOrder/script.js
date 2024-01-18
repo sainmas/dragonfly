@@ -1,38 +1,18 @@
 // main
+const email = document.getElementById("inputEmail");
+
 function validateForm() {
-    let noErrors = true;
-    //let x = document.forms["myForm"]["fname"].value;
-    // if(x === "") {
-    //     alert("Name must be filled out");
-    //     return false;
-    // }
-
-    //alert("hello");
-    validateEmail();
-    validatePhone();
-    validateCity();
-    validateToppings();
-
-    if (noErrors === true) {
-        document.forms.submit();
-    }
+    return validateEmail() && validatePhone() && validateCity() && validateToppings();
 }
 
-// email
+// email - yadira
 function validateEmail() {
-    // FIX
-    const re = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/
-
-    let email = document.querySelector("input[name='Email']").value;
-    console.log(email);
-
-    if (email.includes("@greenriver.edu") && String(email)
-        .toLowerCase()
-        .match(re)) {
+    const re= /[^\s@]+@[^\s@]+\.[^\s@]+/;
+    if (email.value.includes("@greenriver.edu") && email.value.match(re)) {
         return true;
     }
 
-    alert("Your email does not contain @greenriver.edu or is not valid")
+    alert("Your email does not contain @greenriver.edu or is not valid");
     return false;
 }
 

@@ -17,6 +17,10 @@ body.dark-mode{
     .navbar{
         background-color: #222021;
     }
+
+    .btn{
+        color: #bbb;
+    }
 }
 
 #bio-container p {

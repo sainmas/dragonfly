@@ -39,16 +39,20 @@ function validateCity(){
     let city = document.getElementById('inputCity');
     let cityLower = city.value.toLowerCase();
 
-    switch (cityLower){
+    switch (cityLower.trim()){
         case ('seattle'):
         case ('kent'):
         case ('auburn'):
         case ('burien'):
         case ('seatac'):
             return true;
+        case (''):
+        case null:
+            alert("City cannot be blank.")
+            return false;
         default:
             alert("A $25 delivery fee will be added to you order total!")
-            return false;
+            return true;
     }
 }
 

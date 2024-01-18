@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6e6fa95-f394-4fa5-870e-5701d78116ee" name="Changes" comment="Fixed signup form's missing validation, added working contact form">
-      <change afterPath="$PROJECT_DIR$/sprint1/applicationscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pizzaOrder/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint1/applicationform.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint1/applicationform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizzaOrder/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizzaOrder/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/pizzaOrder/script.js" afterDir="false" />
     </list>
     <list id="e13cc91c-4a7b-467c-ab92-78eb5cdc34c2" name="Changes by gwyll" comment="" />
     <list id="27a361a9-401e-4ad6-8271-5d3788f2d951" name="Changes by Mason" comment="Changes by Mason" />
@@ -25,6 +26,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,6 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/yc916/PhpstormProjects/dragonfly/sprint1",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

@@ -8,13 +8,24 @@ function validateForm() {
 // email - yadira
 function validateEmail() {
     const re= /[^\s@]+@[^\s@]+\.[^\s@]+/;
-    if (email.value.includes("@greenriver.edu") && email.value.match(re)) {
+
+    if(email.value.includes("@greenriver.edu") && email.value.match(re)) {
         return true;
     }
-
-    alert("Your email does not contain @greenriver.edu or is not valid");
     return false;
 }
+
+email.addEventListener("input", (Event) => {
+    let message = document.getElementById("email-message");
+    let showMessage = validateEmail();
+
+    if (!showMessage) {
+        message.style.visibility = "visible";
+    } else {
+        message.style.visibility = "hidden";
+    }
+});
+
 
 //topping validator
 function validateToppings() {

@@ -50,6 +50,37 @@ sign up form
     visibility: hidden;
 }
 
+@media screen and (max-width: 1000px) {
+    #main-container {
+        max-width: 90%;
+    }
+    .app-list, .reminders, .software-dev-img, .about-program {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .software-dev-img {
+        width: 80%;
+        margin: auto auto 25px;
+    }
+    #new-app-container, #update-account-container {
+        width: 50%;
+    }
+    .app-button-inner {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app-button-outer {
+        width:50%;
+    }
+    .title {
+        text-align: center;
+        width:66.66666666666%;
+    }
+}
+
 .app-list{
     gap: 10px;
     padding: 15px;

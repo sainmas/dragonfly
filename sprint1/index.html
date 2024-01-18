@@ -11,7 +11,7 @@
     <title>Sprint 1</title>
 </head>
 <body style="margin: 5px">
-    <div class="container p-3" >
+    <div class="container p-3" id="main-container">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -50,71 +50,71 @@
                 </div>
                 <div class="row app-list-item">
                     <div class="col-2">Date</div>
-                    <div class="col-4">Title</div>
+                    <div class="title col-4">Title</div>
                     <div class="col-2">Status</div>
-                    <div class="col-2">
-                        <button class="btn btn-update border border-3 border-success">Update</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-update border border-3 border-success">Update</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-delete border border-3 border-danger">Delete</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-delete border border-3 border-danger">Delete</button>
                     </div>
                 </div>
                 <div class="row app-list-item">
                     <div class="col-2">Date</div>
-                    <div class="col-4">Title</div>
+                    <div class="title col-4">Title</div>
                     <div class="col-2">Status</div>
-                    <div class="col-2">
-                        <button class="btn btn-update border border-3 border-success">Update</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-update border border-3 border-success">Update</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-delete border border-3 border-danger">Delete</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-delete border border-3 border-danger">Delete</button>
                     </div>
                 </div>
                 <div class="row app-list-item">
                     <div class="col-2">Date</div>
-                    <div class="col-4">Title</div>
+                    <div class="title col-4">Title</div>
                     <div class="col-2">Status</div>
-                    <div class="col-2">
-                        <button class="btn btn-update border border-3 border-success">Update</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-update border border-3 border-success">Update</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-delete border border-3 border-danger">Delete</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-delete border border-3 border-danger">Delete</button>
                     </div>
                 </div>
                 <div class="row app-list-item">
                     <div class="col-2">Date</div>
-                    <div class="col-4">Title</div>
+                    <div class="title col-4">Title</div>
                     <div class="col-2">Status</div>
-                    <div class="col-2">
-                        <button class="btn btn-update border border-3 border-success">Update</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-update border border-3 border-success">Update</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-delete border border-3 border-danger">Delete</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-delete border border-3 border-danger">Delete</button>
                     </div>
                 </div>
                 <div class="row app-list-item">
                     <div class="col-2">Date</div>
-                    <div class="col-4">Title</div>
+                    <div class="title col-4">Title</div>
                     <div class="col-2">Status</div>
-                    <div class="col-2">
-                        <button class="btn btn-update border border-3 border-success">Update</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-update border border-3 border-success">Update</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-delete border border-3 border-danger">Delete</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-delete border border-3 border-danger">Delete</button>
                     </div>
                 </div>
                 <div class="row app-list-item">
                     <div class="col-2">Date</div>
-                    <div class="col-4">Title</div>
+                    <div class="title col-4">Title</div>
                     <div class="col-2">Status</div>
-                    <div class="col-2">
-                        <button class="btn btn-update border border-3 border-success">Update</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-update border border-3 border-success">Update</button>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-delete border border-3 border-danger">Delete</button>
+                    <div class="app-button-outer col-2">
+                        <button class="app-button-inner btn btn-delete border border-3 border-danger">Delete</button>
                     </div>
                 </div>
-                <p class="mx-auto" style="display: block; width:100px; color: green">More</p>
+                <p class="title mx-auto" style="display: block; width:100px; color: green">More</p>
 
             </div>
             <div class="reminders col border border-3 border-black">
@@ -147,10 +147,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-8">
+            <div class="col-8" id="new-app-container">
                 <a href="#" class="btn mx-auto p-2 border border-3 border-black" style="display: block; width: 200px;">Add NEW APP</a>
             </div>
-            <div class="col-4">
+            <div class="col-4" id="update-account-container">
                 <a href="#" class="" style="color:green">Update Account Setting</a>
             </div>
         </div>
@@ -178,11 +178,11 @@
             </div>
         </div>
         <div class="row text-wrap">
-            <div class="col-3">
+            <div class="software-dev-img col-3">
                 <img src="images/it-software-dev.jpg" alt="5" class="img-fluid col-3" style="width: 500px">
             </div>
 
-            <div class="col-9">
+            <div class="about-program col-9">
                 <h5>About Our Program</h5>
                 <p>Prepare for an exciting career in tech with a Bachelor of Applied Science in Software Development. Affordable tuition, instructors who care, access to tech industry mentors, and project-based learning make our applied bachelor’s program a popular destination for computing majors throughout the Seattle-Tacoma region. This degree prepares graduates for high-demand jobs such as software developer, web developer, software developer in test, and quality assurance (QA) analyst. Learn more at <a href="https://www.greenriver.edu/students/academics/degrees-programs/bachelor-of-applied-science/bachelors-in-software-development/">GreenRiver.edu</a></p>
             </div>

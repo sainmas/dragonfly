@@ -1,5 +1,7 @@
 body{
     background-color: white;
+    color: #212529;
+
 }
 
 body.dark-mode{
@@ -35,9 +37,8 @@ body h5{
     text-align: justify;
 }
 
-/**
-sign up form
- */
+/* sign up form */
+
 #email-message {
     visibility: hidden;
 }
@@ -52,6 +53,31 @@ sign up form
 
 #contact-message-invalid {
     visibility: hidden;
+}
+
+/* form styles */
+.form-header {
+    background-color: rgba(0,0,0,.03);
+    border: solid 1px rgba(0,0,0,.125);
+    border-bottom: none;
+}
+
+.form-container {
+    border: solid 1px rgba(0,0,0,.125);
+    display: flex;
+    justify-content: center;
+}
+
+.form-body {
+    width: 90%;
+
+}
+
+.submit-btn {
+    background-color: #6CB443;
+    padding: 7px 10px 7px 10px;
+    border: none;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 1000px) {

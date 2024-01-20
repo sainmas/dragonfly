@@ -1,7 +1,7 @@
 // contact form
 const name = document.getElementById("input-contact-name");
 const email = document.getElementById("input-email");
-
+const submit = document.getElementById("submit-btn");
 function validateForm(){
     return validateEmail() && validateName();
 }
@@ -16,6 +16,16 @@ function validateEmail() {
 
     return !!email.value.match(re);
 }
+
+submit.addEventListener("mouseover", (Event) => {
+    submit.className += "-hover";
+
+});
+
+submit.addEventListener("mouseout", (Event) => {
+    submit.className = "submit-btn";
+
+});
 
 // email.addEventListener("input", (Event) => {
 //     let invalidEmail = document.getElementById("contact-email-invalid");

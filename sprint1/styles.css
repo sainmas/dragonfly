@@ -53,8 +53,6 @@ body h5{
     margin-bottom: 3rem;
 }
 
-
-
 .form-body {
     width: 90%;
 }
@@ -65,9 +63,19 @@ body h5{
 /*}*/
 
 .submit-btn {
-    background-color: #6CB443;
-    border: none;
+    background-color: white;
+    border: 1px solid #545454;
     border-radius: 2px;
+    color: #2c882b;
+    font-weight: 600;
+    padding: 7px 10px 7px 10px;
+}
+
+.submit-btn-hover {
+    background-color: #6CB443;
+    border: 1px solid #6CB443;
+    border-radius: 2px;
+    font-weight: 600;
     padding: 7px 10px 7px 10px;
 }
 

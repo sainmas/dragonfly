@@ -3,6 +3,7 @@ const name = document.getElementById("input-name");
 const email = document.getElementById("input-email");
 const cohortNumber = document.getElementById("input-cohort-num");
 const roles = document.getElementById("input-roles");
+const submit = document.getElementById("submit-btn");
 const MIN = 1;
 const MAX = 100;
 const MIN_CHARACTERS = 50;
@@ -74,3 +75,13 @@ cohortNumber.addEventListener("input", (Event) => {
 function validateRoles() {
     return !(roles.value.length < MIN_CHARACTERS || roles.value.length > MAX_CHARACTERS);
 }
+
+submit.addEventListener("mouseover", (Event) => {
+    submit.className += "-hover";
+
+});
+
+submit.addEventListener("mouseout", (Event) => {
+    submit.className = "submit-btn";
+
+});

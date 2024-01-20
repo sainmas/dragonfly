@@ -1,3 +1,11 @@
+const darkModeSwitch = document.getElementById("dark-mode-switch");
+
+window.onload = function() {
+    setTodayDate();
+    set2WeekDate();
+    setupListeners();
+}
+
 function setTodayDate() {
     var today = new Date();
     var day = today.getDate();
@@ -32,7 +40,16 @@ function set2WeekDate() {
     twoWeekDay = year + '-' + month + '-' + day;
     document.getElementById('two-weeks').value = twoWeekDay;
 }
-window.onload = function() {
-    setTodayDate();
-    set2WeekDate();
+
+function setupListeners(){
+    setupDarkModeListener();
+}
+
+function setupDarkModeListener(){
+    let darkModeOn = false;
+
+    darkModeSwitch.addEventListener("change", () => {
+        darkModeOn ? document.body.classList.remove('dark-mode') : document.body.classList.add('dark-mode');
+        darkModeOn = !darkModeOn;
+    });
 }

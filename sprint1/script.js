@@ -1,19 +1,18 @@
-$(document).ready(function() {
-    handleDarkModeSwitch();
-});
+const darkModeSwitch = document.getElementById("dark-mode-switch");
 
-function handleDarkModeSwitch(){
+window.onload = function() {
+    setupListeners();
+}
+
+function setupListeners(){
+    setupDarkModeListener();
+}
+
+function setupDarkModeListener(){
     let darkModeOn = false;
-    console.log("setting up switch");
-    $('#darkModeSwitch').change(function() {
-        console.log("Dark Mode switch changed");
-        if (darkModeOn){
-            console.log("Turning OFF Dark Mode");
-            $('body').removeClass("dark-mode");
-        }else{
-            console.log("Turning ON Dark Mode");
-            $('body').addClass("dark-mode");
-        }
+
+    darkModeSwitch.addEventListener("change", () => {
+        darkModeOn ? document.body.classList.remove('dark-mode') : document.body.classList.add('dark-mode');
         darkModeOn = !darkModeOn;
     });
 }

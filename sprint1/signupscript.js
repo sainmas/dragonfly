@@ -9,6 +9,12 @@ const MIN_CHARACTERS = 50;
 const MAX_CHARACTERS = 500;
 
 function validateForm(){
+    let isEmpty = name.value === null && email.value === null && cohortNumber.value === null && roles.value === null;
+
+    if(isEmpty) {
+        alert("Form is empty!");
+    }
+
     return validateEmail() && validateCohortNum() && validateName() && validateRoles();
 }
 
@@ -24,17 +30,22 @@ function validateEmail() {
 }
 
 // toggles email message
-
-email.addEventListener("input", (Event) => {
-    let message = document.getElementById("email-message");
-
-    if (!email.value.includes("@greenriver.edu")) {
-        message.style.visibility = "visible";
-    } else {
-        message.style.visibility = "hidden";
-    }
-});
-
+// email.addEventListener("input", (Event) => {
+//     const emailMessage = document.getElementById("email-message");
+//     const message = "Please use an @greenriver.edu email if possible";
+//
+//     let small = document.createElement("small");
+//     small.setAttribute('id', "email-message");
+//     small.innerText = message;
+//
+//     if (!email.value.includes("@greenriver.edu")) {
+//         if(!document.contains(emailMessage)) {
+//             document.getElementById("email").appendChild(small);
+//         }
+//     } else {
+//         emailMessage.remove();
+//     }
+// });
 
 function validateCohortNum() {
     return !(cohortNumber.value < MIN || cohortNumber.value > MAX);
@@ -42,12 +53,20 @@ function validateCohortNum() {
 
 // toggles cohort num message
 cohortNumber.addEventListener("input", (Event) => {
-    let message = document.getElementById("cohort-num-message");
+    const cohortMessage = document.getElementById("cohort-num-message");
+    const message = "Cohort number is invalid";
+
+    let small = document.createElement("small");
+    small.setAttribute('id', "cohort-num-message");
+    small.setAttribute('class', 'warning')
+    small.innerText = message;
 
     if(cohortNumber.value < MIN || cohortNumber.value > MAX) {
-        message.style.visibility = "visible";
+        if(!document.contains(cohortMessage)) {
+            document.getElementById("cohort-num").appendChild(small);
+        }
     } else {
-        message.style.visibility = "hidden";
+        cohortMessage.remove();
     }
 });
 

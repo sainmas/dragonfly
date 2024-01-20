@@ -37,48 +37,42 @@ body h5{
     text-align: justify;
 }
 
-/* sign up form */
-
-#email-message {
-    visibility: hidden;
-}
-
-#cohort-num-message {
-    visibility: hidden;
-}
-
-#contact-email-invalid {
-    visibility: hidden;
-}
-
-#contact-message-invalid {
-    visibility: hidden;
-}
-
 /* form styles */
 .form-header {
     background-color: rgba(0,0,0,.03);
     border: solid 1px rgba(0,0,0,.125);
     border-bottom: none;
+    margin-bottom: 0;
+    padding: 1rem;
 }
 
 .form-container {
     border: solid 1px rgba(0,0,0,.125);
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .form-body {
     width: 90%;
-
 }
+
+/*input[type='radio']:checked {*/
+/*    background-color: grey;*/
+/*    border-color: grey;*/
+/*}*/
 
 .submit-btn {
     background-color: #6CB443;
-    padding: 7px 10px 7px 10px;
     border: none;
     border-radius: 2px;
+    padding: 7px 10px 7px 10px;
 }
+
+.warning {
+    color: #D14900;
+}
+
 
 @media screen and (max-width: 1000px) {
     #main-container {

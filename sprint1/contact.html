@@ -34,30 +34,30 @@
             </div>
         </nav>
     </div>
-    <div class="row">
-        <h2 class="pt-3">Contact</h2>
 
-        <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" novalidate onsubmit="return validateForm()" name="signup">
-            <div class="mb-3">
-                <label for="input-contact-name" class="form-label">Name*:</label>
-                <input type="text" class="form-control" id="input-contact-name" name="name" required>
-            </div>
+    <h3 class="form-header">Contact</h3>
+    <div class="form-container">
+        <div class="form-body">
+            <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" onsubmit="return validateForm()" name="signup" class="my-3">
+                <div class="mb-4">
+                    <label for="input-contact-name" class="form-label">Name*:</label>
+                    <input type="text" class="form-control" id="input-contact-name" name="name" placeholder="First and Last Name" required>
+                </div>
 
-            <div class="mb-3">
-                <label for="input-email" class="form-label">Email*:</label>
-                <input type="email" class="form-control" id="input-email" name="email" required>
-                <small id="contact-email-invalid">Not a valid email</small>
-            </div>
+                <div class="mb-4">
+                    <label for="input-email" class="form-label">Email*:</label>
+                    <input type="email" class="form-control" id="input-email" name="email" placeholder="e.g. example@email.com" required>
+                </div>
 
-            <div class="mb-3">
-                <label for="input-message" class="form-label">Message*:</label>
-                <input type="text" class="form-control" id="input-message" name="message" required>
-                <small id="contact-message-invalid">Message should be within 100-1000 characters</small>
-            </div>
+                <div class="mb-4">
+                    <label for="input-message" class="form-label">Message*:</label>
+                    <textarea class="form-control" id="input-message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+                </div>
 
 
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
     </div>
 
 

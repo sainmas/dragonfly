@@ -16,8 +16,8 @@ window.onload = function() {
 
 function setupListeners(){
     setupCohortListener();
-    setupDarkModeListener();
-    setupMouseListeners();
+    setupDarkModeListener()
+    setupMouseListener();
 }
 
 function validateForm(){

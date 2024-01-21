@@ -1,12 +1,11 @@
 body{
     background-color: white;
     color: #212529;
-
+    margin: 0;
 }
 
 body.dark-mode{
     color: #d3d3d3;
-    background-color: #111;
 
     .nav-link, .btn, a {
         color: #bbb;
@@ -16,10 +15,18 @@ body.dark-mode{
         color: #d3d3d3
     }
 
-    .navbar{
-        background-color: #222021;
+    header{
+        background-color: #4d4d4d;
     }
 
+    main{
+        background-color: #333333;
+    }
+
+    footer{
+        background-color: #4d4d4d;
+        position: relative;
+    }
     .btn{
         color: #bbb;
     }
@@ -29,8 +36,27 @@ body.dark-mode{
     }
 }
 
-body h5{
+body h5, h6{
     color: #006225;
+}
+
+header{
+    background-color: #ffffff;
+    height: 70px;
+}
+
+main{
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 200px);
+}
+
+footer{
+    background-color: #ffffff;
+    height: 130px;
+}
+
+footer button{
+    border-radius: 0;
 }
 
 #bio-container p {
@@ -174,5 +200,5 @@ a {
 }
 
 .resources-list>li{
-    margin-bottom: 8px;
+    border: none;
 }

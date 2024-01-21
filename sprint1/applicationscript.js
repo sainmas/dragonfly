@@ -1,4 +1,5 @@
 const darkModeSwitch = document.getElementById("dark-mode-switch");
+const submit = document.getElementById("submit-btn");
 
 window.onload = function() {
     setTodayDate();
@@ -39,17 +40,30 @@ function set2WeekDate() {
 
     twoWeekDay = year + '-' + month + '-' + day;
     document.getElementById('two-weeks').value = twoWeekDay;
-}
 
-function setupListeners(){
-    setupDarkModeListener();
-}
+    function setupListeners(){
+        setupDarkModeListener();
+        setupMouseListeners();
+    }
 
-function setupDarkModeListener(){
-    let darkModeOn = false;
+    function setupDarkModeListener(){
+        let darkModeOn = false;
 
-    darkModeSwitch.addEventListener("change", () => {
-        darkModeOn ? document.body.classList.remove('dark-mode') : document.body.classList.add('dark-mode');
-        darkModeOn = !darkModeOn;
-    });
+        darkModeSwitch.addEventListener("change", () => {
+            darkModeOn ? document.body.classList.remove('dark-mode') : document.body.classList.add('dark-mode');
+            darkModeOn = !darkModeOn;
+        });
+    }
+
+    function setupMouseListeners(){
+        submit.addEventListener("mouseover", (Event) => {
+            submit.className += "-hover";
+
+        });
+
+        submit.addEventListener("mouseout", (Event) => {
+            submit.className = "submit-btn";
+
+        });
+    }
 }

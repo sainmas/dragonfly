@@ -1,3 +1,4 @@
+const submit = document.getElementById("submit-btn");
 function setTodayDate() {
     var today = new Date();
     var day = today.getDate();
@@ -36,3 +37,13 @@ window.onload = function() {
     setTodayDate();
     set2WeekDate();
 }
+
+submit.addEventListener("mouseover", (Event) => {
+    submit.className += "-hover";
+
+});
+
+submit.addEventListener("mouseout", (Event) => {
+    submit.className = "submit-btn";
+
+});

@@ -1,5 +1,7 @@
 body{
     background-color: white;
+    color: #212529;
+
 }
 
 body.dark-mode{
@@ -35,24 +37,52 @@ body h5{
     text-align: justify;
 }
 
-/**
-sign up form
- */
-#email-message {
-    visibility: hidden;
+/* form styles */
+.form-header {
+    background-color: rgba(0,0,0,.03);
+    border: solid 1px rgba(0,0,0,.125);
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 1rem;
 }
 
-#cohort-num-message {
-    visibility: hidden;
+.form-container {
+    border: solid 1px rgba(0,0,0,.125);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
-#contact-email-invalid {
-    visibility: hidden;
+.form-body {
+    width: 90%;
 }
 
-#contact-message-invalid {
-    visibility: hidden;
+/*input[type='radio']:checked {*/
+/*    background-color: grey;*/
+/*    border-color: grey;*/
+/*}*/
+
+.submit-btn {
+    background-color: white;
+    border: 1px solid #545454;
+    border-radius: 2px;
+    color: #2c882b;
+    font-weight: 600;
+    padding: 7px 10px 7px 10px;
 }
+
+.submit-btn-hover {
+    background-color: #6CB443;
+    border: 1px solid #6CB443;
+    border-radius: 2px;
+    font-weight: 600;
+    padding: 7px 10px 7px 10px;
+}
+
+.warning {
+    color: #D14900;
+}
+
 
 @media screen and (max-width: 1000px) {
     #main-container {

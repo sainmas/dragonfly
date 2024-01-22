@@ -33,44 +33,49 @@
                 </div>
             </nav>
         </div>
-        <div class="row">
-            <h2 class="pt-3">Sign-up</h2>
 
-            <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" novalidate onsubmit="return validateForm()" name="signup">
-                <div class="mb-3">
+        <h3 class="form-header">Sign-up</h3>
+        <div class="form-container">
+
+            <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" onsubmit="return validateForm()" class="form-body my-3">
+                <div class="mb-4">
                     <label for="input-name" class="form-label">Name*:</label>
-                    <input type="text" class="form-control" id="input-name" name="name" required>
+                    <input type="text" class="form-control" id="input-name" name="name" placeholder="First and Last Name" required>
                 </div>
 
-                <div class="mb-3">
+                <div id="email" class="mb-4">
                     <label for="input-email" class="form-label">Email*:</label>
-                    <input type="email" class="form-control" id="input-email" name="email" required>
-                    <small id="email-message">Note: an @greenriver.edu email is preferred</small>
+                    <input type="email" class="form-control" id="input-email" name="email" placeholder="e.g. example@email.com" required>
+                    <small>Please use an @greenriver.edu email if possible</small>
                 </div>
 
-                <div class="mb-3">
+                <div id="cohort-num" class="mb-4">
                     <label for="input-cohort-num" class="form-label">Cohort Number*:</label>
                     <input type="number" class="form-control" id="input-cohort-num" name="cohort-num" required>
-                    <small id="cohort-num-message">Cohort number is invalid</small>
                 </div>
 
-                <div class="form-check form-check-inline mb-3">
-                    <label class="form-label">Status:</label><br>
-                    <input type="radio" class="" id="seekingInternship" name="status" value="true">
-                    <label for="seekingInternship" class="">Seeking Internship</label>
-                    <input type="radio" class="" id="seekingJob" name="status" value="true">
-                    <label for="seekingJob" class="">Seeking Job</label>
-                    <input type="radio" class="" id="notSearching" name="status" value="true">
-                    <label for="notSearching" class="">Not Actively Searching</label>
+                <div class="mb-4">
+                    <p class="mb-1">Status:</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="seeking-internship" name="status" value="true">
+                        <label for="seeking-internship" class="form-check-label">Seeking Internship</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="seeking-job" name="status" value="true">
+                        <label for="seeking-job" class="form-check-label">Seeking Job</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="not-searching" name="status" value="true">
+                        <label for="not-searching" class="form-check-label">Not Actively Searching</label>
+                    </div>
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-4">
                     <label for="input-roles" class="form-label">What roles are you looking for?*</label>
-                    <input type="text" class="form-control" id="input-roles" name="roles" required>
+                    <textarea class="form-control" id="input-roles" name="roles" rows="3" minlength="50" maxlength="200" required></textarea>
                 </div>
 
-
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="submit-btn" type="submit" class="submit-btn">Submit</button>
             </form>
         </div>
     </div>

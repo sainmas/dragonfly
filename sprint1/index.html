@@ -123,7 +123,7 @@
                     <div>
                         <h5>Reminders</h5>
                         <div>
-                            <div class="row reminder-div border border-3 border-black">
+                            <div class="row reminder-div">
                                 <div class="col-8">
                                     Follow up with XYZ
                                 </div>
@@ -131,7 +131,7 @@
                                     <a href="#" class="btn border border-3 border-success">View</a>
                                 </div>
                             </div>
-                            <div class="row reminder-div border border-3 border-black">
+                            <div class="row reminder-div">
                                 <div class="col-8">
                                     3 Incomplete APPS
                                 </div>
@@ -139,7 +139,7 @@
                                     <a href="#" class="btn border border-3 border-success">View</a>
                                 </div>
                             </div>
-                            <div class="row reminder-div border border-3 border-black">
+                            <div class="row reminder-div">
                                 <div class="col">
                                     <a href="#" class="btn-reminder-more border-black">Find More Opportunities</a>
                                 </div>
@@ -149,8 +149,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8" id="new-app-container">
-                    <a href="#" class="btn mx-auto p-2 border border-3 border-black" style="display: block; width: 200px;">Add NEW APP</a>
+                <div class="col-8 d-flex" id="new-app-container">
+                    <a href="#" id="new-app-btn" class="btn mx-auto p-2">Add NEW APP</a>
                 </div>
                 <div class="col-4" id="update-account-container">
                     <a href="#" class="" style="color:green">Update Account Setting</a>
@@ -178,17 +178,41 @@
         <div class="container p-3 ">
             <h6>RESOURCES:</h6>
             <ul class="list-unstyled justify-content-center resources-list list-group list-group-horizontal list-group-flush">
-                <li class="list-group-item p-0 m-0"><a href="https://www.linkedin.com/" target="_blank" class="btn btn-light
-                 text-dark btn-sm"><img src="images/In-Blue-Logo.png" alt="5" style="max-height: 25px"> LinkedIn</a></li>
-                <li class="list-group-item p-0 m-0"><a href="https://www.indeed.com/" target="_blank" class="btn btn-light
-                 text-dark btn-sm"><img src="images/Indeed_Logo_RGB.png" alt="5" style="max-height: 25px"></a></li>
-                <li class="list-group-item p-0 m-0"><a href="https://www.devs.greenrivertech.net/studentResources" target="_blank" class="btn btn-light
-                 text-dark btn-sm"><img src="images/sdev_logo.png" alt="5" style="max-height: 25px"> Green River Tech</a></li>
-                <li class="list-group-item p-0 m-0"><a href="https://www.glassdoor.com/index.htm" target="_blank" class="btn btn-light
-                 text-dark btn-sm"><img src="images/new-glassdoor-icon-1-300x239.jpg" alt="5" style="max-height: 25px"> Glassdoor</a></li>
-                <li class="list-group-item p-0 m-0"><a href="https://www.levels.fyi/?compare=Amazon,Microsoft,Facebook&track=Software%20Engineer" target="_blank" class="btn btn-light
-                 text-dark btn-sm"><img src="images/levelsfyi.png" alt="5" style="max-height: 25px">Levels FYI</a></li>
-                <li class="list-group-item p-0 m-0"><a href="https://www.google.com/search?q=software+development+jobs" target="_blank">More</a></li>
+                <li class="list-group-item p-0 m-0">
+                    <a href="https://www.linkedin.com/" target="_blank" class="btn btn-light
+                 text-dark btn-sm">
+                        <img src="images/In-Blue-Logo.png" alt="5" style="max-height: 25px">LinkedIn
+                    </a>
+                </li>
+                <li class="list-group-item p-0 m-0">
+                    <a href="https://www.indeed.com/" target="_blank" class="btn btn-light
+                 text-dark btn-sm">
+                        <img src="images/Indeed_Logo_RGB.png" alt="5" style="max-height: 25px">
+                    </a>
+                </li>
+                <li class="list-group-item p-0 m-0">
+                    <a href="https://www.devs.greenrivertech.net/studentResources" target="_blank" class="btn btn-light
+                 text-dark btn-sm">
+                        <img src="images/sdev_logo.png" alt="5" style="max-height: 25px"> Green River Tech
+                    </a>
+                </li>
+                <li class="list-group-item p-0 m-0">
+                    <a href="https://www.glassdoor.com/index.htm" target="_blank" class="btn btn-light
+                 text-dark btn-sm">
+                        <img src="images/new-glassdoor-icon-1-300x239.jpg" alt="5" style="max-height: 25px"> Glassdoor
+                    </a>
+                </li>
+                <li class="list-group-item p-0 m-0">
+                    <a href="https://www.levels.fyi/?compare=Amazon,Microsoft,Facebook&track=Software%20Engineer" target="_blank" class="btn btn-light
+                 text-dark btn-sm">
+                        <img src="images/levelsfyi.png" alt="5" style="max-height: 25px">Levels FYI
+                    </a>
+                </li>
+                <li class="list-group-item p-0 m-0">
+                    <a href="https://www.google.com/search?q=software+development+jobs" target="_blank" class="btn btn-light text-dark btn-sm">
+                        <img src="images/google_logo_icon.png" alt="5" style="max-height: 25px">More
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>

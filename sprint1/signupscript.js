@@ -15,24 +15,23 @@ window.onload = function() {
 }
 
 function setupListeners(){
-    setupCohortListener();
     setupDarkModeListener()
     setupMouseListener();
 }
 
 function validateForm(){
-    let isEmpty = name.value === null && email.value === null && cohortNumber.value === null && roles.value === null;
+    // let isEmpty = name.value === null && email.value === null && cohortNumber.value === null && roles.value === null;
+    //
+    // if(isEmpty) {
+    //     alert("Form is empty!");
+    // }
 
-    if(isEmpty) {
-        alert("Form is empty!");
-    }
-
-    return validateEmail() && validateCohortNum() && validateName() && validateRoles();
+    return validateEmail();
 }
 
-function validateName() {
-    return name.value.length !== 0;
-}
+// function validateName() {
+//     return name.value.length !== 0;
+// }
 
 // validates email
 function validateEmail() {
@@ -54,36 +53,36 @@ email.addEventListener("input", (Event) => {
 });
 */
 
-function validateCohortNum() {
-    return !(cohortNumber.value < MIN || cohortNumber.value > MAX);
-}
+// function validateCohortNum() {
+//     return !(cohortNumber.value < MIN || cohortNumber.value > MAX);
+// }
 
-function setupCohortListener(){
-    // toggles cohort num message
-    cohortNumber.addEventListener("input", (Event) => {
-        const cohortMessage = document.getElementById("cohort-num-message");
-        const message = "Cohort number is invalid";
-
-        let small = document.createElement("small");
-        small.setAttribute('id', "cohort-num-message");
-        small.setAttribute('class', 'warning')
-        small.innerText = message;
-
-        if(cohortNumber.value < MIN || cohortNumber.value > MAX) {
-            if(!document.contains(cohortMessage)) {
-                document.getElementById("cohort-num").appendChild(small);
-            }
-        } else {
-            cohortMessage.remove();
-        }
-    });
-}
+// function setupCohortListener(){
+//     // toggles cohort num message
+//     cohortNumber.addEventListener("input", (Event) => {
+//         const cohortMessage = document.getElementById("cohort-num-message");
+//         const message = "Cohort number is invalid";
+//
+//         let small = document.createElement("small");
+//         small.setAttribute('id', "cohort-num-message");
+//         small.setAttribute('class', 'warning')
+//         small.innerText = message;
+//
+//         if(cohortNumber.value < MIN || cohortNumber.value > MAX) {
+//             if(!document.contains(cohortMessage)) {
+//                 document.getElementById("cohort-num").appendChild(small);
+//             }
+//         } else {
+//             cohortMessage.remove();
+//         }
+//     });
+// }
 
 
 // validates roles input
-function validateRoles() {
-    return !(roles.value.length < MIN_CHARACTERS || roles.value.length > MAX_CHARACTERS);
-}
+// function validateRoles() {
+//     return !(roles.value.length < MIN_CHARACTERS || roles.value.length > MAX_CHARACTERS);
+// }
 
 function setupMouseListener(){
     submit.addEventListener("mouseover", (Event) => {

@@ -15,7 +15,7 @@ body.dark-mode{
         color: #d3d3d3
     }
 
-    header{
+    .nav-container{
         background-color: #4d4d4d;
     }
 
@@ -70,7 +70,7 @@ main{
 
 footer{
     background-color: #ffffff;
-    height: 130px;
+    /*height: 130px;*/
 }
 
 footer button{
@@ -79,6 +79,11 @@ footer button{
 
 #bio-container p {
     text-align: justify;
+}
+
+.link {
+    color: #006225;
+    font-weight: 600;
 }
 
 /* form styles */

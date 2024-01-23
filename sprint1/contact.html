@@ -5,35 +5,36 @@
     <title>Contact</title>
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container p-1">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="signup.html">Sign Up</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="applicationform.html">Add New Application</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+<div class="nav-container">
+    <div class="container p-1">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="applicationform.html">Add New Application</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+</div>
     <main>
         <div class="container p-3" id="main-container">
             <div class="d-flex justify-content-end">
@@ -47,17 +48,17 @@
                 <div class="form-body">
                     <form method="post" action="https://dragonfly.greenriverdev.com/vardump.php" onsubmit="return validateForm()" name="signup" class="my-3">
                         <div class="mb-4">
-                            <label for="input-contact-name" class="form-label">Name*:</label>
+                            <label for="input-contact-name" class="form-label">Name*</label>
                             <input type="text" class="form-control" id="input-contact-name" name="name" placeholder="First and Last Name" required>
                         </div>
 
                         <div class="mb-4">
-                            <label for="input-email" class="form-label">Email*:</label>
+                            <label for="input-email" class="form-label">Email*</label>
                             <input type="email" class="form-control" id="input-email" name="email" placeholder="e.g. example@email.com" required>
                         </div>
 
                         <div class="mb-4">
-                            <label for="input-message" class="form-label">Message*:</label>
+                            <label for="input-message" class="form-label">Message*</label>
                             <textarea class="form-control" id="input-message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
                         </div>
 
@@ -71,7 +72,7 @@
     <footer>
         <div class="container p-3 ">
             <h6>RESOURCES:</h6>
-            <ul class="list-unstyled justify-content-center resources-list list-group list-group-horizontal list-group-flush">
+            <ul class="list-unstyled justify-content-center resources-list list-group list-group-horizontal-sm list-group-flush">
                 <li class="list-group-item p-0 m-0"><a href="https://www.linkedin.com/" target="_blank" class="btn btn-light
                  text-dark btn-sm"><img src="images/In-Blue-Logo.png" alt="5" style="max-height: 25px"> LinkedIn</a></li>
                 <li class="list-group-item p-0 m-0"><a href="https://www.indeed.com/" target="_blank" class="btn btn-light
